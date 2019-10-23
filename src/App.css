@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -9,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #3333cc;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,11 +28,123 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.progressBarContainer {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding-bottom: 2px;
+}
+
+.calConsumed, .calGoal {
+  font-size: 30px;
+}
+
+.calCaptions {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 0px;
+  padding-bottom: 20px;
+}
+.col-gr-font {
+  color: #686868;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+
+.percentage {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  margin: auto;
+  margin-top: 7px;
+
+}
+
+.content-div {
+  width: 100%;
+  padding-right: 5%;
+  margin-left: 15px;
+  padding-top: 20px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.itemCardContainer {
+  display: flex;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.results-overlay {
+  z-index: 2;
+  position: absolute;
+  margin-top: 10px;
+
+  height: 80vh;
+  overflow-y: scroll;
+  background-color: rgba(0,0,0, 0.9); /* Black with a little bit see-through */
+}
+
+@media only screen and (min-width: 500px) {
+  .results-overlay {
+    width: 71.5vh;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.searchBox {
+  width: 65vh;
+}
+
+.search-heading {
+  padding-left: 3%;
+  padding-top: 3%;
+  font-size: 12px;
+  color: grey;
+  font-weight: bold;
+}
+
+.search-result-box {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E0E0E0;
+  margin-left: 3%;
+  padding: 2% 1%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-result-food-name {
+  text-transform: capitalize;
+  margin-left: 20px;
+}
+
+.mobileUserStatsSection {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  width: 51vh;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.picName {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.mobileWandH {
+  display: flex;
+  align-items: center;
+}
+
+.makeStyles-sectionMobile-10 {
+  display: block !important;
 }
